@@ -6,6 +6,7 @@
       "image": "girishnuli/multi-client",
       "hostname": "client",
       "essential": true,
+      "memory": 128,
       "portMappings": [
         {
           "hostPort": 3000,
@@ -18,6 +19,7 @@
       "image": "girishnuli/multi-server",
       "hostname": "server",
       "essential": false,
+      "memory": 128,
       "portMappings": [
         {
           "hostPort": 5000,
