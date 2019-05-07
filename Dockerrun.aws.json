@@ -1,0 +1,30 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "containerDefinitions": [
+    {
+      "name": "client",
+      "image": "girishnuli/multi-client",
+      "hostname": "client",
+      "essential": true,
+      "portMappings": [
+        {
+          "hostPort": 3000,
+          "containerPort": 3000
+        }
+      ]
+    },
+    {
+      "name": "server",
+      "image": "girishnuli/multi-server",
+      "hostname": "server",
+      "essential": false,
+      "portMappings": [
+        {
+          "hostPort": 5000,
+          "containerPort": 5000
+        }
+      ],
+      "links": ["client"]
+    }
+  ]
+}
