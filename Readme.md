@@ -34,6 +34,7 @@
 - eb local run // Launches all containers, just like docker-compose
 
 ## Deploy to AWS
+- IMP: Ensure all files have been committed to git
 - https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_docker_ecstutorial.html
 - Option 1: Zip the folder and upload using GUI
 - Option 2: eb deploy
